@@ -1,0 +1,634 @@
+{
+    "plantas": [
+        {
+            "Tipo": "alocacia amazonica ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "alocacia black",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "25.00"
+        },
+        {
+            "Tipo": "alocacia poli ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "ametista ",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "ametista ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "aspargus cuia ",
+            "Pote": "Cuia",
+            "Unidade": "1",
+            "Preço": "18.00"
+        },
+        {
+            "Tipo": "Aspargus real",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "Asplenio",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "25.00"
+        },
+        {
+            "Tipo": "Azaleia",
+            "Pote": "9",
+            "Unidade": "1",
+            "Preço": "5.00"
+        },
+        {
+            "Tipo": "Azaleia",
+            "Pote": "24",
+            "Unidade": "1",
+            "Preço": "35.00"
+        },
+        {
+            "Tipo": "Azaleia grande",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "250.00"
+        },
+        {
+            "Tipo": "Babosa",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "18.00"
+        },
+        {
+            "Tipo": "barba de moises",
+            "Pote": "Cuia13",
+            "Unidade": "1",
+            "Preço": "8.00"
+        },
+        {
+            "Tipo": "Bipinatifidun",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "20.00"
+        },
+        {
+            "Tipo": "Bouganvelle",
+            "Pote": "24",
+            "Unidade": "1",
+            "Preço": "60.00"
+        },
+        {
+            "Tipo": "Bouganvelle grande",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "180.00"
+        },
+        {
+            "Tipo": "Bromelia imperial",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "90.00"
+        },
+        {
+            "Tipo": "Bromelia peq",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "Bromelia Zebrada",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "56.00"
+        },
+        {
+            "Tipo": "cactus raiz ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "10.00"
+        },
+        {
+            "Tipo": "Caladuin",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "8.00"
+        },
+        {
+            "Tipo": "calanchue",
+            "Pote": "nd",
+            "Unidade": "cx/12",
+            "Preço": "36.00"
+        },
+        {
+            "Tipo": "calanchue ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "5.00"
+        },
+        {
+            "Tipo": "Calicia",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "18.00"
+        },
+        {
+            "Tipo": "carnivora ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "coladuin ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "8.00"
+        },
+        {
+            "Tipo": "colleus",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "10.00"
+        },
+        {
+            "Tipo": "colleus  ",
+            "Pote": "Cuia",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "Comigo ninguem PD",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "70.00"
+        },
+        {
+            "Tipo": "denfal",
+            "Pote": "quadrado",
+            "Unidade": "1",
+            "Preço": "25.00"
+        },
+        {
+            "Tipo": "Dianela",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "17.00"
+        },
+        {
+            "Tipo": "dinheiro em penca",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "18.00"
+        },
+        {
+            "Tipo": "dipladenia ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "10.00"
+        },
+        {
+            "Tipo": "Ervas",
+            "Pote": "nd",
+            "Unidade": "caixa",
+            "Preço": "24.00"
+        },
+        {
+            "Tipo": "Ervas Aromaticas",
+            "Pote": "11",
+            "Unidade": "caixa",
+            "Preço": "5.00"
+        },
+        {
+            "Tipo": "Ervas Aromaticas",
+            "Pote": "15",
+            "Unidade": "caixa",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "Esfaganum Branco",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "55.00"
+        },
+        {
+            "Tipo": "Esfaganum verde",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "65.00"
+        },
+        {
+            "Tipo": "Espada de S.J",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "20.00"
+        },
+        {
+            "Tipo": "Espada de S.J",
+            "Pote": "17",
+            "Unidade": "1",
+            "Preço": "25.00"
+        },
+        {
+            "Tipo": "Espadinha",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "6.00"
+        },
+        {
+            "Tipo": "Ficus bengalles",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "90 á 120"
+        },
+        {
+            "Tipo": "ficus plastica",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "57.00"
+        },
+        {
+            "Tipo": "ficus rubi ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "150.00"
+        },
+        {
+            "Tipo": "ficus uriata",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "80.00"
+        },
+        {
+            "Tipo": "ficus uriata ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "160.00"
+        },
+        {
+            "Tipo": "Filodendro Imperial",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "60.00"
+        },
+        {
+            "Tipo": "Filodendro scandes",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "28.00"
+        },
+        {
+            "Tipo": "fitonia ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "8.00"
+        },
+        {
+            "Tipo": "geranco pend",
+            "Pote": "nd",
+            "Unidade": "caixa",
+            "Preço": "60.00"
+        },
+        {
+            "Tipo": "geranco pend ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "5.00"
+        },
+        {
+            "Tipo": "hera cuia ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "20.00"
+        },
+        {
+            "Tipo": "Ixoria mini",
+            "Pote": "nd",
+            "Unidade": "caixa",
+            "Preço": "35.00"
+        },
+        {
+            "Tipo": "Jabuticaba Gigante",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "2000.00"
+        },
+        {
+            "Tipo": "Jabuticaba grande",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "200.00"
+        },
+        {
+            "Tipo": "jiboia cuia ",
+            "Pote": "Cuia",
+            "Unidade": "1",
+            "Preço": "25.00"
+        },
+        {
+            "Tipo": "jiboia meia lua",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "50.00"
+        },
+        {
+            "Tipo": "Jiboia Prateada",
+            "Pote": "cuia13",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "lea rubia ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "25.00"
+        },
+        {
+            "Tipo": "Lirio paz ",
+            "Pote": "11",
+            "Unidade": "1",
+            "Preço": "10.00"
+        },
+        {
+            "Tipo": "Lirio paz ",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "Lirio paz ",
+            "Pote": "24",
+            "Unidade": "1",
+            "Preço": "30.00"
+        },
+        {
+            "Tipo": "Maranthas",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "50.00"
+        },
+        {
+            "Tipo": "mini orquidea",
+            "Pote": "9",
+            "Unidade": "1",
+            "Preço": "18.00"
+        },
+        {
+            "Tipo": "moreira ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "Ninimiliana grande",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "orapro nobis ",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "18.00"
+        },
+        {
+            "Tipo": "Pachira Grande",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "120.00"
+        },
+        {
+            "Tipo": "Pachira peq",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "65.00"
+        },
+        {
+            "Tipo": "Pacova",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "Pacova",
+            "Pote": "19",
+            "Unidade": "1",
+            "Preço": "25.00"
+        },
+        {
+            "Tipo": "Pacova",
+            "Pote": "24",
+            "Unidade": "1",
+            "Preço": "35.00"
+        },
+        {
+            "Tipo": "Patinha de Elefante",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "5.00"
+        },
+        {
+            "Tipo": "Pau dágua",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "90.00"
+        },
+        {
+            "Tipo": "peperonia",
+            "Pote": "6",
+            "Unidade": "1",
+            "Preço": "5.00"
+        },
+        {
+            "Tipo": "peperonia",
+            "Pote": "6",
+            "Unidade": "caixa",
+            "Preço": "60.00"
+        },
+        {
+            "Tipo": "Peperonia scandes",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "18.00"
+        },
+        {
+            "Tipo": "Perpetua",
+            "Pote": "cuia",
+            "Unidade": "1",
+            "Preço": "20.00"
+        },
+        {
+            "Tipo": "pimenta ",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "pimenta ",
+            "Pote": "nd",
+            "Unidade": "atacado",
+            "Preço": "12.00"
+        },
+        {
+            "Tipo": "Rafis",
+            "Pote": "17",
+            "Unidade": "1",
+            "Preço": "30.00"
+        },
+        {
+            "Tipo": "Rafis",
+            "Pote": "24",
+            "Unidade": "1",
+            "Preço": "70.00"
+        },
+        {
+            "Tipo": "Renda Portuguesa",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "20.00"
+        },
+        {
+            "Tipo": "rosa deserto",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "20.00"
+        },
+        {
+            "Tipo": "rosa deserto ",
+            "Pote": "11",
+            "Unidade": "1",
+            "Preço": "10.00"
+        },
+        {
+            "Tipo": "rosa deserto dobrada",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "25.00"
+        },
+        {
+            "Tipo": "rosa deserto dobrada ",
+            "Pote": "11",
+            "Unidade": "1",
+            "Preço": "18.00"
+        },
+        {
+            "Tipo": "roseira",
+            "Pote": "11",
+            "Unidade": "1",
+            "Preço": "10.00"
+        },
+        {
+            "Tipo": "Roseira",
+            "Pote": "nd",
+            "Unidade": "caixa",
+            "Preço": "35.00"
+        },
+        {
+            "Tipo": "Roseira",
+            "Pote": "nd ",
+            "Unidade": "1",
+            "Preço": "4.00"
+        },
+        {
+            "Tipo": "roseira ",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "13.00"
+        },
+        {
+            "Tipo": "Samanbaia",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "30.00"
+        },
+        {
+            "Tipo": "Samanbaia Havaiana",
+            "Pote": "cuia13",
+            "Unidade": "1",
+            "Preço": "6.00"
+        },
+        {
+            "Tipo": "suculenta",
+            "Pote": "9",
+            "Unidade": "caixa",
+            "Preço": "40.00"
+        },
+        {
+            "Tipo": "suculenta",
+            "Pote": "11",
+            "Unidade": "1",
+            "Preço": "6.00"
+        },
+        {
+            "Tipo": "suculenta cactus ",
+            "Pote": "6",
+            "Unidade": "1",
+            "Preço": "20.00"
+        },
+        {
+            "Tipo": "suculenta echeveria",
+            "Pote": "6",
+            "Unidade": "caixa",
+            "Preço": "30.00"
+        },
+        {
+            "Tipo": "Tostas",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "tradescante roxa",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "16.00"
+        },
+        {
+            "Tipo": "tuia ",
+            "Pote": "15",
+            "Unidade": "1",
+            "Preço": "30.00"
+        },
+        {
+            "Tipo": "veu de noiva",
+            "Pote": "nd ",
+            "Unidade": "1",
+            "Preço": "12.00"
+        },
+        {
+            "Tipo": "Vinca",
+            "Pote": "cuia",
+            "Unidade": "1",
+            "Preço": "15.00"
+        },
+        {
+            "Tipo": "violeta",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "4.00"
+        },
+        {
+            "Tipo": "Zamioculcas",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "35.00"
+        },
+        {
+            "Tipo": "Zamioculcas black",
+            "Pote": "nd",
+            "Unidade": "1",
+            "Preço": "80.00"
+        }
+    ]
+}

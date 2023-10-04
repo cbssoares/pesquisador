@@ -1,0 +1,3 @@
+Listadeplantas => async function (){
+    fetch() 
+} 
