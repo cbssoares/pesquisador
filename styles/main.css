@@ -1,0 +1,13 @@
+.divPlanta{
+    display: flex;
+    flex-direction: column;
+    font-family: sans-serif;
+    background-color: green;
+    gap: 10px;
+    margin: 10px;
+    justify-content: center;
+    align-items: center;
+    width: 400px;
+    height: 400px;
+    
+}
