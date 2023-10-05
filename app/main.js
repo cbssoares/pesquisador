@@ -8,7 +8,7 @@ const renderizaLista = async () => {
     await listaBlocos.forEach(e => {
         const bloco = document.createElement("div")
         bloco.classList.add('divPlanta')
-        bloco.innerHTML = `<img src="" alt="">
+        bloco.innerHTML = `<img  class='imagemPlanta'src=${e.imagem} alt="">
         <h2>Nome: ${e.Tipo}</h2>
         <p>Pote: ${e.Pote}</p>
         <p>Unidade: ${e.Unidade}</p>
@@ -41,7 +41,7 @@ async function salvaResultado(busca) {
         await listaFiltrada.forEach(e => {
             const bloco = document.createElement("div")
             bloco.classList.add('divPlanta')
-            bloco.innerHTML = `<img src="" alt="">
+            bloco.innerHTML = `<img class='imagemPlanta' src=${e.imagem} alt="">
             <h2>Nome: ${e.Tipo}</h2>
             <p>Pote: ${e.Pote}</p>
             <p>Unidade: ${e.Unidade}</p>
