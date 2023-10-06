@@ -1,7 +1,7 @@
 var blocoPlantas = document.getElementById("bloco-plantas")
 var pesquisaInput = document.querySelector('.pesquisa')
 console.log(pesquisaInput)
-import listaDePlantas from "./api.js"
+import {listaDePlantas} from "./api.js"
 
 function formaBloco(e){
     const bloco = document.createElement("div")
@@ -15,7 +15,7 @@ function formaBloco(e){
 }
 
 const renderizaLista = async () => {
-    const listaBlocos = await listaDePlantas
+    const listaBlocos = await listaDePlantas()
     await listaBlocos.forEach((e) => formaBloco(e))
 }
 
@@ -36,7 +36,7 @@ async function salvaResultado(busca) {
     if (busca == "") {
         renderizaLista()
     } else {
-        const listaBlocos = await listaDePlantas
+        const listaBlocos = await listaDePlantas()
         const listaFiltrada = await listaBlocos.filter(plantas => plantas.Tipo.toLowerCase().includes(busca.toLowerCase()))
         blocoPlantas.innerHTML = ''
         await listaFiltrada.forEach(e => formaBloco(e))

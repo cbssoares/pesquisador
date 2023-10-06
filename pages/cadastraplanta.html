@@ -13,7 +13,6 @@
     <main class="principal">
         <div class="divCadastraPlanta">
             <form id="formCadastraPlanta">
-                <input type="submit" value="">
                 <p>
                     <label for="formNome"><strong>Nome</strong></label>
                     <input type="text" name="nome" id="formNome">
@@ -24,19 +23,21 @@
                 </p>
                 <p>
                     <label for="formUnidade"><strong>Unidade</strong></label>
-                    <input type="text" id="formUnidade">
+                    <input type="text" id="formUnidade" name="unidade">
                 </p>
                 <p>
                     <label for="formPreco"><strong>Preço</strong></label>
-                    <input type="number" id="formPreco">
+                    <input type="number" id="formPreco" name="preco">
                 </p>
                 <p>
                     <label for="formImage"><strong>Imagem</strong></label>
-                    <input type="url" id="formImage">
+                    <input type="url" id="formImage" name="imagem">
                 </p>
+                <input type="submit" value="Cadastrar Planta" id="submitPlanta" class="botaoPlanta">
             </form>
+            <button class="botaoPlanta">Voltar</button>
         </div>
     </main>
-    <script src="../app/cadastraplanta.js"></script>
+    <script src="../app/cadastraplanta.js" type="module"></script>
 </body>
 </html>

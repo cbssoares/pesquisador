@@ -1,12 +1,33 @@
-#formCadastraPlanta {
+.principal{
+ background-image: url(https://i.pinimg.com/originals/4a/e6/27/4ae62766ba7ceb08ea0128b0f4a4953b.png);
+ background-size: cover;
+ background-color: rgb(163, 199, 187);
+ height: 100vh
+}
+
+.divCadastraPlanta{
     background-color: rgb(166, 216, 166) ;
-    width: 500px;
-    background-size: 250px;
+    width: 90vw;
+    padding: 20px 0px;
+    height: fit-content;
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: top;
+    gap: 30px;
+    border-radius: 20px;
+}
+
+#formCadastraPlanta {
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     gap: 50px;
-    height: 100%;
-    padding: 20px 0px;
+}
+
+.botaoPlanta{
+    background-color: rgb(95, 187, 95);
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
 }
