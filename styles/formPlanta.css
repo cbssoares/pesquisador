@@ -1,0 +1,12 @@
+#formCadastraPlanta {
+    background-color: rgb(166, 216, 166) ;
+    width: 500px;
+    background-size: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: top;
+    gap: 50px;
+    height: 100%;
+    padding: 20px 0px;
+}
