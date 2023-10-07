@@ -15,19 +15,19 @@
             <form id="formCadastraPlanta">
                 <p>
                     <label for="formNome"><strong>Nome</strong></label>
-                    <input type="text" name="nome" id="formNome">
+                    <input type="text" name="nome" id="formNome" required>
                 </p>
                 <p>
                     <label for="formPote"><strong>Pote</strong></label>
-                    <input type="text" name="pote" id="formPote">
+                    <input type="text" name="pote" id="formPote" required>
                 </p>
                 <p>
                     <label for="formUnidade"><strong>Unidade</strong></label>
-                    <input type="text" id="formUnidade" name="unidade">
+                    <input type="text" id="formUnidade" name="unidade" required>
                 </p>
                 <p>
                     <label for="formPreco"><strong>Preço</strong></label>
-                    <input type="number" id="formPreco" name="preco">
+                    <input type="number" id="formPreco" name="preco" required >
                 </p>
                 <p>
                     <label for="formImage"><strong>Imagem</strong></label>
@@ -35,7 +35,7 @@
                 </p>
                 <input type="submit" value="Cadastrar Planta" id="submitPlanta" class="botaoPlanta">
             </form>
-            <button class="botaoPlanta">Voltar</button>
+            <a class="botaoPlanta" href="../index.html">Voltar</a>
         </div>
     </main>
     <script src="../app/cadastraplanta.js" type="module"></script>

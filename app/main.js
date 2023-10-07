@@ -34,6 +34,7 @@ const testeobj = [{ Tipo: "rosa" }, { Tipo: "lixo" }]
 
 async function salvaResultado(busca) {
     if (busca == "") {
+        blocoPlantas.innerHTML = ''
         renderizaLista()
     } else {
         const listaBlocos = await listaDePlantas()

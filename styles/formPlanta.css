@@ -8,6 +8,7 @@
 .divCadastraPlanta{
     background-color: rgb(166, 216, 166) ;
     width: 90vw;
+    max-width: 500px;
     padding: 20px 0px;
     height: fit-content;
     display: flex;
@@ -30,4 +31,8 @@
     background-color: rgb(95, 187, 95);
     border: 1px solid rgba(0, 0, 0, 0.329);
     border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 3px 10px;
 }

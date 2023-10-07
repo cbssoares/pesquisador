@@ -12,6 +12,7 @@
     justify-content: center;
     width:100vw;
     font-family: var(--fonte1);
+   
 
 }
 
@@ -20,12 +21,17 @@
     background-color: rgb(77, 216, 77);
     width: calc(100% - 40px);
     text-align: center;
+    display: flex;
+    gap: 10px;
+    justify-content: center;
 }
 
 .pesquisa{
     width: 300px;
     padding: 4px 0px;
 }
+
+
 
 #bloco-plantas{
     margin: 0px auto;
@@ -49,15 +55,16 @@
     margin: 10px;
     justify-content: top;
     align-items: center;
-    width: 200px;
+    width: 190px;
     height: 350px;
     gap: 13px;
     font-size: 1rem;
+    flex-basis:px;
 }
 
 .imagemPlanta{
     height: 200px;
-    width: 200px;
+    width: 100%;
     border-radius: 10px 10px 0px 0px;
 }
 
@@ -69,4 +76,15 @@
 strong,.tituloPlanta{
     text-decoration: underline rgba(0, 0, 0, 0.452) 1.5px ;
 
+}
+
+
+.botaoPlanta{
+    background-color: rgb(95, 187, 95);
+    border: 1px solid rgba(0, 0, 0, 0.329);
+    border-radius: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    color: black;
+    padding: 3px 10px;
 }
