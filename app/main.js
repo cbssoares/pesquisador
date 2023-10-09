@@ -30,6 +30,7 @@ pesquisaInput.addEventListener('keyup', async () => {
 })
 
 
+
 const testeobj = [{ Tipo: "rosa" }, { Tipo: "lixo" }]
 
 async function salvaResultado(busca) {
