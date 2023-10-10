@@ -1,16 +1,16 @@
 const listaDePlantas = (async () => {
-    const lista = await fetch("https://api.jsonbin.io/v3/b/652045820574da7622b554f4", { method: "GET" })
+    const lista = await fetch("https://getpantry.cloud/apiv1/pantry/872e29e3-2574-4be6-9b55-d262402179f6/basket/plantas", { method: "GET" })
     const listaAdaptada = await lista.json()
-    var listaDados = await listaAdaptada.record.plantas
+    var listaDados = await listaAdaptada.plantas
 
     return listaDados
 })
 
 const atualizaLista = (listaAtualizada) => {
-    fetch("https://api.jsonbin.io/v3/b/652045820574da7622b554f4", {
-        method: "PUT",
+    fetch("https://getpantry.cloud/apiv1/pantry/872e29e3-2574-4be6-9b55-d262402179f6/basket/plantas", {
+        method: "POST",
         headers: {
-            'Content-Type': 'application/json', "X-Master-Key": "$2a$10$Qfwwy.ebivC7icPtrGbROOsJ9BMFoxqzPtiOhsen7qQZUBniPqLG6", "X-Bin-Versioning": "false"
+            'Content-Type': 'application/json'
         }, body: JSON.stringify({ plantas: listaAtualizada })
     })
 }
