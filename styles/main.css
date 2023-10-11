@@ -59,13 +59,32 @@
     height: 350px;
     gap: 13px;
     font-size: 1rem;
-    flex-basis:px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+}
+
+
+.iconeX{
+    position: relative;
+    top: 5px;
+    left: 80px;
+    color: rgb(199, 45, 45);
+    font-size: 1.3rem;
+    outline: black;
+    text-decoration: dashed black 50px;
+    text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.116);
+    cursor: pointer;
+}
+
+.iconeX:hover{
+    color: red;
+    text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.116);
 }
 
 .imagemPlanta{
     height: 200px;
     width: 100%;
     border-radius: 10px 10px 0px 0px;
+    margin-top: -37px;
 }
 
 .tituloPlanta{
