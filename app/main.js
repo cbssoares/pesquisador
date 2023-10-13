@@ -8,9 +8,9 @@ import { recebeInformacao } from "./editaPlanta.js"
 
 
 
-function formaBloco(e) {
+async function  formaBloco(e, chave) {
     const bloco = document.createElement("div")
-    bloco.classList.add('divPlanta')
+    bloco.classList.add('divPlanta',  chave)
     bloco.innerHTML =
         `
         <span class="material-icons iconeX icones ">
@@ -32,7 +32,7 @@ function formaBloco(e) {
 const renderizaLista = async () => {
     blocoPlantas.innerHTML = ''
     const listaBlocos = await listaDePlantas()
-    await listaBlocos.forEach((e) => formaBloco(e))
+    await listaBlocos.forEach((e) => formaBloco(e, listaBlocos.indexOf(e)))
     const botaoApaga = document.querySelectorAll(".iconeX")
     const iconeEdit = document.querySelectorAll('.iconeEdit')
     botaoApaga.forEach((e) => e.addEventListener("click", () => apagaItens(e.parentNode)))
@@ -54,7 +54,6 @@ pesquisaInput.addEventListener('keyup', async () => {
 
 
 
-const testeobj = [{ Tipo: "rosa" }, { Tipo: "lixo" }]
 
 async function salvaResultado(busca) {
     if (busca == "") {
@@ -63,7 +62,7 @@ async function salvaResultado(busca) {
         const listaBlocos = await listaDePlantas()
         const listaFiltrada = await listaBlocos.filter(plantas => plantas.Tipo.toLowerCase().includes(busca.toLowerCase()))
         blocoPlantas.innerHTML = ''
-        await listaFiltrada.forEach(e => formaBloco(e))
+        await listaFiltrada.forEach(e => formaBloco(e, listaBlocos.indexOf(e)))
         const botaoApaga = document.querySelectorAll(".iconeX")
         const iconeEdit = document.querySelectorAll('.iconeEdit')
         botaoApaga.forEach((e) => e.addEventListener("click", () => apagaItens(e.parentNode)))

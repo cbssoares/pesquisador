@@ -7,7 +7,7 @@ const blocoFormulario = document.querySelector("#editaBloco")
 
 const recebeInformacao =  async (e) =>{
     var lista = await listaDePlantas()
-    var item =  await lista.map((e) => e.Tipo).indexOf(e.querySelector(".tituloPlanta").textContent)
+    var item =  await e.classList[1]
     console.log(lista[item])
     formulario.nome.setAttribute("value", lista[item].Tipo)
     formulario.pote.setAttribute("value", lista[item].Pote)
