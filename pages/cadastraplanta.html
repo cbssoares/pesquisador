@@ -1,38 +1,36 @@
 <!DOCTYPE html>
 <html lang="pt-br">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cadatrar Planta</title> 
+    <title>Cadastrar Planta</title>
     <link rel="stylesheet" href="../styles/reset.css">
     <link rel="stylesheet" href="../styles/main.css">
     <link rel="stylesheet" href="../styles/formPlanta.css">
-   
+
 </head>
+
 <body>
     <main class="principal">
         <div class="divCadastraPlanta" data-="">
             <form id="formCadastraPlanta">
-                <p>
-                    <label for="formNome"><strong>Nome</strong></label>
-                    <input type="text" name="nome" id="formNome" required>
-                </p>
-                <p>
-                    <label for="formPote"><strong>Pote</strong></label>
-                    <input type="text" name="pote" id="formPote" required>
-                </p>
-                <p>
-                    <label for="formUnidade"><strong>Unidade</strong></label>
-                    <input type="text" id="formUnidade" name="unidade" required>
-                </p>
-                <p>
-                    <label for="formPreco"><strong>Preço</strong></label>
-                    <input type="number" id="formPreco" name="preco" required >
-                </p>
-                <p>
-                    <label for="formImage"><strong>Imagem</strong></label>
-                    <input type="url" id="formImage" name="imagem">
-                </p>
+                <div class="divDados">
+                    <p class="paragrafoPlanta">
+                        <input type="text" name="nome" id="formNome" required>
+                        <input type="text" name="pote" id="formPote" required>
+                        <input type="text" id="formUnidade" name="unidade" required>
+                        <input type="number" id="formPreco" name="preco" required>
+                        <input type="url" id="formImage" name="imagem">
+                    </p>
+                    <p class="campoLabel">
+                        <label for="formNome"><strong>Nome</strong></label>
+                        <label for="formPote"><strong>Pote</strong></label>
+                        <label for="formUnidade"><strong>Unidade</strong></label>
+                        <label for="formPreco"><strong>Preço</strong></label>
+                        <label for="formImage"><strong>Imagem</strong></label>
+                    </p>
+                </div>
                 <input type="submit" value="Cadastrar Planta" id="submitPlanta" class="botaoPlanta">
             </form>
             <a class="botaoPlanta" href="../index.html">Voltar</a>
@@ -41,9 +39,10 @@
     <script src="../app/cadastraplanta.js" type="module"></script>
     <script type="text/javascript" src="https://npmcdn.com/parse/dist/parse.min.js"></script>
     <script>
-    // Initialize Parse
-      Parse.initialize("jWInjqoVWYwoUWkhpBy6OQZD5L7AnHVlulQwb2tP", "IuUds4pWTHuXyXOut3agmwMNqCIefTCh39a4TZIX"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
-      Parse.serverURL = "https://parseapi.back4app.com/Plantas";
+        // Initialize Parse
+        Parse.initialize("jWInjqoVWYwoUWkhpBy6OQZD5L7AnHVlulQwb2tP", "IuUds4pWTHuXyXOut3agmwMNqCIefTCh39a4TZIX"); //PASTE HERE YOUR Back4App APPLICATION ID AND YOUR JavaScript KEY
+        Parse.serverURL = "https://parseapi.back4app.com/Plantas";
     </script>
 </body>
+
 </html>

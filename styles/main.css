@@ -144,8 +144,30 @@ strong,.tituloPlanta{
     display: flex;
     flex-flow: column;
     align-items: center;
+    justify-content: center;
     gap: 6px;
 }
+
+.divDados{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.pLabel{
+    display: flex;
+    flex-direction: column;
+    gap:10px;
+}
+
+.pInput{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+
 
 .iconeApaga{
     color: rgb(216, 8, 8);
