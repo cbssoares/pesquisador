@@ -7,7 +7,7 @@ import { recebeInformacao } from "./editaPlanta.js"
 
 
 
-
+//  Constroi  blocos com informações das plantas
 async function  formaBloco(e, chave) {
     const bloco = document.createElement("div")
     bloco.classList.add('divPlanta',  chave)
@@ -28,6 +28,8 @@ async function  formaBloco(e, chave) {
     blocoPlantas.appendChild(bloco)
 
 }
+
+// Renderiza a lista de de plantas 
 
 const renderizaLista = async () => {
     blocoPlantas.innerHTML = ''
@@ -53,7 +55,7 @@ pesquisaInput.addEventListener('keyup', async () => {
 })
 
 
-
+// mecanismo de pesquisa
 
 async function salvaResultado(busca) {
     if (busca == "") {
