@@ -16,7 +16,7 @@ async function  formaBloco(e, chave) {
         <span class="material-icons iconeX icones ">
         cancel
         </span>
-        <img  class='imagemPlanta'src=${e.imagem} alt="">
+        <img  class='imagemPlanta'src=${e.imagem} alt="Imagem da planta">
         <h2 class="tituloPlanta">${e.Tipo}</h2>
         <p><strong>Pote:</strong> ${e.Pote}</p>
         <p><strong>Unidade:</strong> ${e.Unidade}</p>
