@@ -42,6 +42,11 @@ const cadastraPlanta = async (form) => {
     }
     return 0;
   })
+
+  await listaNova.forEach(e => {
+    e.id = `${listaNova.indexOf(e)}`
+    
+  });
   atualizaLista(listaNova)
   imagem = ""
   nome = ""
@@ -50,7 +55,7 @@ const cadastraPlanta = async (form) => {
   preco = ""
   console.log(imagem,nome,pote,unidade,preco)
   window.alert('Item cadastrado com sucesso')
-  window.location.reload()
+
 
 }
 
