@@ -1,13 +1,13 @@
 const listaDePlantas = (async () => {
-    const lista = await fetch("http://localhost:3000", { method: "GET" })
+    const lista = await fetch("http://localhost:3000/plantas", { method: "GET" })
     const listaAdaptada = await lista.json()
-    var listaDados = await listaAdaptada.plantas
+    var listaDados = await listaAdaptada
 
     return listaDados
 })
 
 const atualizaLista = (listaAtualizada) => {
-    fetch("http://localhost:3000", {
+    fetch("http://localhost:3000/plantas", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'
