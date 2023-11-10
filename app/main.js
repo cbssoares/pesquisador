@@ -38,7 +38,7 @@ const renderizaLista = async () => {
     const botaoApaga = document.querySelectorAll(".iconeX")
     const iconeEdit = document.querySelectorAll('.iconeEdit')
     botaoApaga.forEach((e) => e.addEventListener("click", () => apagaItens(e.parentNode)))
-    iconeEdit.forEach((e) => e.addEventListener("click", () => recebeInformacao(e.parentNode)))
+    iconeEdit.forEach((e) => e.addEventListener("click", () => recebeInformacao(e.parentNode, "edita")))
 
 }
 
@@ -68,7 +68,7 @@ async function salvaResultado(busca) {
         const botaoApaga = document.querySelectorAll(".iconeX")
         const iconeEdit = document.querySelectorAll('.iconeEdit')
         botaoApaga.forEach((e) => e.addEventListener("click", () => apagaItens(e.parentNode)))
-        iconeEdit.forEach((e) => e.addEventListener("click", () => recebeInformacao(e.parentNode)))
+        iconeEdit.forEach((e) => e.addEventListener("click", () => recebeInformacao(e.parentNode, "edita")))
     }
 
 }

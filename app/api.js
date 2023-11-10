@@ -1,5 +1,5 @@
 const listaDePlantas = (async () => {
-    const lista = await fetch("https://getpantry.cloud/apiv1/pantry/872e29e3-2574-4be6-9b55-d262402179f6/basket/plantas", { method: "GET" })
+    const lista = await fetch("http://localhost:3000", { method: "GET" })
     const listaAdaptada = await lista.json()
     var listaDados = await listaAdaptada.plantas
 
@@ -7,7 +7,7 @@ const listaDePlantas = (async () => {
 })
 
 const atualizaLista = (listaAtualizada) => {
-    fetch("https://getpantry.cloud/apiv1/pantry/872e29e3-2574-4be6-9b55-d262402179f6/basket/plantas", {
+    fetch("http://localhost:3000", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'

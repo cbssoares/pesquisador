@@ -1,23 +1,28 @@
 import { listaDePlantas } from "./api.js"
 import { atualizaLista } from "./api.js"
+import { recebeInformacao } from "./editaPlanta.js"
 
-const formulario = document.getElementById("formCadastraPlanta")
+const botaoCadastra = document.querySelector("#botaoCadastra")
+const blocoFormulario = document.querySelector("#editaBloco")
+const formulario = document.querySelector("#formEditaBloco")
 
 
-
-
-formulario.addEventListener('submit', async (e) => {
-  cadastraPlanta(e)
+botaoCadastra.addEventListener('click', async () => {
+  blocoFormulario.classList.remove('invisivel')
+  blocoFormulario.classList.add('visivel')
+  await recebeInformacao(0,"cadastra")
+  
 })
 
 
+
 const cadastraPlanta = async (form) => {
-  form.preventDefault()
-  let imagem = form.target.imagem.value
-  let nome = form.target.nome.value
-  let pote = form.target.pote.value
+  console.log(form)
+  let imagem =  form.target.imagem.value
+  let nome =   form.target.nome.value
+  let pote =  form.target.pote.value
   let unidade = form.target.unidade.value
-  let preco = form.target.preco.value
+  let preco =  form.target.preco.value
   const listaNova = await listaDePlantas()
   const novaPlanta = {
     imagem: imagem,
@@ -47,3 +52,5 @@ const cadastraPlanta = async (form) => {
   window.location.reload()
 
 }
+
+export {cadastraPlanta}

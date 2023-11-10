@@ -17,10 +17,14 @@
     <main class="principal">
         <div class="divPesquisa">
             <input class="pesquisa" type="search" placeholder="Digite o nome da planta">
-            <a class="botaoPlanta" href="pages/cadastraplanta.html" target="_parent">Cadastrar um novo item</a>
+            <button class="botaoPlanta"  id="botaoCadastra">Cadastrar um novo item</button>
         </div>
+
+        <!-- bloco onde os cards de plantas serão renderizados  -->
         <div id="bloco-plantas">
         </div>
+
+        <!-- Formulario de edição/adição de plantas -->
         <div id="editaBloco" class="invisivel">
             <span class="material-icons iconeApaga">
                 cancel
@@ -42,7 +46,7 @@
                         <input type="url" id="formEditaImage" name="imagem">
                     </p>
                 </div>
-                <input type="submit" value="Editar Planta" class="botaoPlanta">
+                <input type="submit" value="Concluído" class="botaoPlanta" id="botaoConcluido">
             </form>
         </div>
     </main>
@@ -52,5 +56,6 @@
 <script src="app/api.js" type="module"></script>
 <script type="module" src="app/apagaPlantas.js"></script>
 <script type="module" src="app/editaPlanta.js"></script>
+<script type="module" src="app/cadastraplanta.js"></script>
 
 </html>
