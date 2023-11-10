@@ -1,5 +1,5 @@
 const listaDePlantas = (async () => {
-    const lista = await fetch("https://listadeplantas-86d9fbc0f283.herokuapp.com/plantas", { method: "GET" })
+    const lista = await fetch("http://192.168.1.15:8080/plantas", { method: "GET" })
     const listaAdaptada = await lista.json()
     var listaDados = await listaAdaptada
 
@@ -7,7 +7,7 @@ const listaDePlantas = (async () => {
 })
 
 const atualizaLista = (listaAtualizada) => {
-    fetch("https://listadeplantas-86d9fbc0f283.herokuapp.com/plantas", {
+    fetch("http://192.168.1.15:8080/plantas", {
         method: "POST",
         headers: {
             'Content-Type': 'application/json'

@@ -17,6 +17,7 @@ botaoCadastra.addEventListener('click', async () => {
 
 
 const cadastraPlanta = async (form) => {
+  form.preventDefault()
   console.log(form)
   let imagem =  form.target.imagem.value
   let nome =   form.target.nome.value
