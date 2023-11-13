@@ -2,8 +2,7 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 const receberinfo = async () => {
-  const lista = await fetch("https://pesquisador-seven.vercel.app/api/tempo", { method: "GET"
-  })
+  const lista = await fetch("https://pesquisador.vercel.app/api/tempo", { method: "GET"})
   const listaAdaptada = await lista.json()
   const listaboa = JSON.stringify( await listaAdaptada)
   return  listaboa
