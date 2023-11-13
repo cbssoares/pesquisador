@@ -5,10 +5,10 @@ const receberinfo = async () => {
   const lista = await fetch("http://localhost:3000/api/tempo")
   const listaAdaptada = await lista.json()
   const listaboa = JSON.stringify(await listaAdaptada)
-   return listaboa
+   console.log(listaboa) 
 }
 
-const listabom = receberinfo()
+receberinfo() 
 
 
 export default  function Home() {
@@ -16,7 +16,7 @@ export default  function Home() {
     <main className={styles.main}>
       <div className={styles.description}>
         <p>
-          Get started by editing&nbsp;
+          Get started by editingsdsdsdsdsds&nbsp;
           <code className={styles.code}>app/page.js</code>
         </p>
         <div>
