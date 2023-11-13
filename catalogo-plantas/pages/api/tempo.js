@@ -1034,7 +1034,9 @@ async function tempo(request, response){
                   Unidade: "1",
                   Preço: "30.00"
                 }
-        ]})
+        ], Header:{
+          "Access-Control-Allow-Origin" : "http://localhost/3000"
+        }})
       }
 
 export default tempo
