@@ -2,15 +2,16 @@ import Image from 'next/image'
 import styles from './page.module.css'
 
 const receberinfo = async () => {
-  const lista = await fetch("https://pesquisador.vercel.app/api/tempo")
+  const lista = await fetch("http://localhost:3000/api/tempo")
   const listaAdaptada = await lista.json()
-  const listaboa = JSON.stringify( await listaAdaptada)
-  return  listaboa
+  const listaboa = JSON.stringify(await listaAdaptada)
+   return listaboa
 }
 
-console.log(receberinfo())
+const listabom = receberinfo()
 
-export default function Home() {
+
+export default  function Home() {
   return (
     <main className={styles.main}>
       <div className={styles.description}>

@@ -1,4 +1,9 @@
-i
+import Cors from 'cors'
+
+
+const cors = Cors({
+  methods: ['POST', 'GET', 'PUT'], origin:  ['http://localhost:3000/', 'https://cbssoares.github.io/pesquisador/']
+})
 
 
 async function tempo(request, response){
