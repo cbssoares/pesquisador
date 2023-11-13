@@ -1,6 +1,16 @@
 import Image from 'next/image'
 import styles from './page.module.css'
 
+const receberinfo = async () => {
+  const lista = await fetch("https://pesquisador-seven.vercel.app/api/tempo", { method: "GET"
+  })
+  const listaAdaptada = await lista.json()
+  const listaboa = JSON.stringify( await listaAdaptada)
+  return  listaboa
+}
+
+console.log(receberinfo())
+
 export default function Home() {
   return (
     <main className={styles.main}>
