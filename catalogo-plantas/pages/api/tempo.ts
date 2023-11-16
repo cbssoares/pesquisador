@@ -38,7 +38,6 @@ if (req.method === "GET") {
   res.status(200).json(plantas)
 } else if(req.method === "PUT"){
    const listaNova = req.body
-   console.log(listaNova)
    plantas.plantas = listaNova
    res.status(201).json(plantas)
 }
