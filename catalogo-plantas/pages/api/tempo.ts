@@ -40,7 +40,7 @@ if (req.method === "GET") {
 } else if(req.method === "PUT"){
    const listaNova = req.body
    listadeplantas.plantas = listaNova
-   res.status(201).json(plantas)
+   res.status(201).json(listadeplantas)
 }
 
 }
