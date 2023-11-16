@@ -12,7 +12,7 @@ const atualizaLista = (listaAtualizada) => {
         method: "PUT",
         headers: {
             'Content-Type': 'application/json',
-        }, body: JSON.stringify({plantas: listaAtualizada})
+        }, body: JSON.stringify({listaAtualizada})
     })
 }
 

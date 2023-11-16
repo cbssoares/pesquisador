@@ -36,6 +36,10 @@ export default async function handler(
   // Rest of the API logic
 if (req.method === "GET") {
   res.status(200).json(plantas)
-} 
+} else if(req.method === "PUT"){
+   const listaNova = req.body
+   plantas.plantas = listaNova
+   res.status(201).json(plantas)
+}
 
 }
