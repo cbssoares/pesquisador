@@ -1,5 +1,5 @@
 export const plantas = {
-    planta: [
+    plantas: [
         {
           id: "1",
           imagem: "https://th.bing.com/th/id/R.71f2ef0a98eac9a7ad37dbeaa6840709?rik=SfU9YJgIM4%2fc4Q&pid=ImgRaw&r=0",
