@@ -2,7 +2,7 @@ const listaDePlantas = (async () => {
     const lista = await fetch("https://pesquisador-seven.vercel.app/api/tempo", { method: "GET"})
     const listaAdaptada = await lista.json()
     var listaDados = await listaAdaptada.planta
-    console.log(await listaAdaptada)
+    console.log(await listaDados)
 
     return listaDados
 })
