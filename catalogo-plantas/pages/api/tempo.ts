@@ -34,6 +34,7 @@ export default async function handler(
   await runMiddleware(req, res, cors)
 
   const listadeplantas = await plantas()
+  console.log( await listadeplantas)
   // Rest of the API logic
 if (req.method === "GET") {
   res.status(200).json(listadeplantas)
