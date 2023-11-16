@@ -33,15 +33,14 @@ export default async function handler(
   // Run the middleware
   await runMiddleware(req, res, cors)
 
-  const listadeplantas = await plantas()
-  console.log( await listadeplantas)
+
   // Rest of the API logic
 if (req.method === "GET") {
-  res.status(200).json(listadeplantas)
+  res.status(200).json(plantas)
 } else if(req.method === "PUT"){
    const listaNova = req.body
-   listadeplantas.plantas = listaNova
-   res.status(201).json(listadeplantas)
+   plantas.plantas = listaNova
+   res.status(201).json(plantas)
 }
 
 }
