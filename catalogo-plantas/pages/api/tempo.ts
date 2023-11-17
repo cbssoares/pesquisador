@@ -5,7 +5,7 @@ import {plantas} from '../api/data/plantas.js'
 // Initializing the cors middleware
 // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
 const cors = Cors({
-  methods: ['POST', 'GET', 'PUT'], origin: ['https://cbssoares.github.io', 'http://localhost:3000/', 'http://127.0.0.1:5500']
+  methods: ['POST', 'GET', 'PUT'], origin: ['https://cbssoares.github.io', 'http://localhost:3000', 'http://127.0.0.1:5500']
 })
 
 // Helper method to wait for a middleware to execute before continuing
