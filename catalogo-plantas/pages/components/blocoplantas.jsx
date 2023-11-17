@@ -1,5 +1,5 @@
 import ContainerPlantas from "./Container.jsx"
-
+// oi
 export default function BlocoPlantas(props) {
     console.log(props.Lista)
     return(
