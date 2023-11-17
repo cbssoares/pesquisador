@@ -1032,5 +1032,6 @@ export const plantas = {
           Unidade: "1",
           Preço: "30.00"
         }
+        // go 
     ]
 }
