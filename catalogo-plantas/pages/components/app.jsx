@@ -7,17 +7,21 @@ const listaP = await listaDePlantas()
 
 export default function App() {
 
-
     const[lista, setlista] = useState(listaP)
+    
 
-    const apagaItens = async (bloco) => {
+    const apagaItens =  async (bloco) => {
         if (window.confirm("Tem certeza que quer apagar este item ?")) {
             console.log(bloco)
             const item = bloco.dataset.chave 
             listaP.splice(item, 1)
             console.log(listaP)
-            atualizaLista(listaAtualizada)
-            setlista(listaAtualizada)
+            const listaNova =  listaP.map( (e) => {
+               e.id = `${listaP.indexOf(e)}`
+               return e
+            })
+            setlista(listaNova)
+            atualizaLista(listaNova)
     
         }
     

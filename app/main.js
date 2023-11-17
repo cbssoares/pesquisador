@@ -31,6 +31,16 @@ async function  formaBloco(e, chave) {
 
 // Renderiza a lista de de plantas 
 
+const renderizaLista = async () => {
+    blocoPlantas.innerHTML = ''
+    const listaBlocos = await listaDePlantas()
+    await listaBlocos.forEach((e) => formaBloco(e, listaBlocos.indexOf(e)))
+    const botaoApaga = document.querySelectorAll(".iconeX")
+    const iconeEdit = document.querySelectorAll('.iconeEdit')
+    botaoApaga.forEach((e) => e.addEventListener("click", () => apagaItens(e.parentNode)))
+    iconeEdit.forEach((e) => e.addEventListener("click", () => recebeInformacao(e.parentNode, "edita")))
+
+}
 
 
 
