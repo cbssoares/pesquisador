@@ -10,14 +10,17 @@ export default function App() {
 
     const[lista, setlista] = useState(listaP)
 
-    const apagaItens = async (bloco) => {
+    const apagaItens = (bloco) => {
         if (window.confirm("Tem certeza que quer apagar este item ?")) {
             console.log(bloco)
             const item = bloco.dataset.chave 
             listaP.splice(item, 1)
+            const listaAtualizada = listaP.map((e) => {
+                e.id = `${listaP.indexOf(e)}`
+            })
             console.log(listaP)
-            atualizaLista(listaP)
-            setlista(listaP)
+            atualizaLista(listaAtualizada)
+            setlista(listaAtualizada)
     
         }
     
