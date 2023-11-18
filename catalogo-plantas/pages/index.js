@@ -13,6 +13,6 @@ export default  function Home() {
   return (
       <StrictMode>
         <App/>
-      </StrictModetrictMode>
+      </StrictMode>
   )
 }
