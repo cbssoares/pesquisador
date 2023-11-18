@@ -11,8 +11,8 @@ import ReactDOM from 'react-dom/client';
 
 export default  function Home() {
   return (
-      <React.StrictMode>
-        <App />
-      </React.StrictMode>
+      <StrictMode>
+        <App/>
+      </StrictModetrictMode>
   )
 }
