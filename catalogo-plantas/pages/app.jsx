@@ -9,7 +9,7 @@ export default function App() {
 
     const[lista, setlista] = useState(listaP)
     
-    const apagaItens =  async (bloco) => {
+    const apagaItens = (bloco) => {
         if (window.confirm("Tem certeza que quer apagar este item ?")) {
             console.log(bloco)
             const item = bloco.dataset.chave 
