@@ -9,7 +9,7 @@ export default function BlocoPlantas(props) {
     return(
     <div id="bloco-plantas">
         {
-        BlocoLista.map( (e) => 
+       BlocoLista && BlocoLista.map( (e) => 
             <ContainerPlantas key = {e.id} chave = {e.id} foto = {e.imagem}  tipo = {e.Tipo} pote = {e.Pote} unidade = {e.Unidade} preco = {e.Preço} ApagaPlanta = {props.ApagaPlanta} ></ContainerPlantas>
         )
         }
