@@ -2,21 +2,21 @@ import { useState, useEffect} from "react"
 import BlocoPlantas from "./components/Blocoplantas/index.jsx"
 import { listaDePlantas } from './api/api.js'
 import { atualizaLista } from "./api/api.js"
-const listaP = await listaDePlantas()
 
 
-export default function App() {
+export default function App(props) {
 
-    const[lista, setlista] = useState(listaP)
+    const[lista, setlista] = useState(props.listaP)
+    console.log(props)
     
     const apagaItens = (bloco) => {
         if (window.confirm("Tem certeza que quer apagar este item ?")) {
             console.log(bloco)
             const item = bloco.dataset.chave 
-            listaP.splice(item, 1)
-            console.log(listaP)
-            const listaNova =  listaP.map( (e) => {
-               e.id = `${listaP.indexOf(e)}`
+            props.listaP.splice(item, 1)
+            console.log(props.listaP)
+            const listaNova =  props.listaP.map( (e) => {
+               e.id = `${props.listaP.indexOf(e)}`
                return e
             })
             
@@ -30,10 +30,10 @@ export default function App() {
 
     function salvaResultado(busca) {
         if (busca == "") {
-            setlista(listaP)
+            setlista(props.listaP)
         } else {
             console.log(busca)
-            const listaFiltrada = listaP.filter(plantas => plantas.Tipo.toLowerCase().includes(busca.toLowerCase()))
+            const listaFiltrada = props.listaP.filter(plantas => plantas.Tipo.toLowerCase().includes(busca.toLowerCase()))
             console.log(listaFiltrada)
             setlista(listaFiltrada)
             
@@ -53,4 +53,15 @@ export default function App() {
     )
 
     
+}
+
+export async function getStaticProps(){
+    const listaP = await listaDePlantas()
+
+     return {
+        props:{
+         listaP
+    }
+}
+
 }

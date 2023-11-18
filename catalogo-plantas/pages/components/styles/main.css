@@ -126,6 +126,7 @@
 }
 
 .tituloPlanta{
+    text-align: center;
     font-size: 1.25rem;
     font-weight: 700;
 }
@@ -196,4 +197,21 @@ strong,.tituloPlanta{
 
 .visivel{
     display: flex;
+}
+
+
+@media (max-width: 450px) {
+    #bloco-plantas{
+        
+    }
+
+    .divPlanta{
+        width: 43vw;
+        height: max-content;
+    }
+
+    .tituloPlanta{
+        font-size: 1.15em;
+    }
+
 }
