@@ -1,7 +1,7 @@
-import { useState } from "react"
-import BlocoPlantas from "./blocoplantas.jsx"
-import { listaDePlantas } from '../api/api.js'
-import { atualizaLista } from "../api/api.js"
+import { useState, useEffect} from "react"
+import BlocoPlantas from "./components/Blocoplantas/index.jsx"
+import { listaDePlantas } from './api/api.js'
+import { atualizaLista } from "./api/api.js"
 const listaP = await listaDePlantas()
 
 
@@ -9,7 +9,6 @@ export default function App() {
 
     const[lista, setlista] = useState(listaP)
     
-
     const apagaItens =  async (bloco) => {
         if (window.confirm("Tem certeza que quer apagar este item ?")) {
             console.log(bloco)
@@ -20,12 +19,14 @@ export default function App() {
                e.id = `${listaP.indexOf(e)}`
                return e
             })
-            setlista(listaNova)
+            
             atualizaLista(listaNova)
-    
+            setlista(listaNova)
         }
     
     }
+
+
 
     function salvaResultado(busca) {
         if (busca == "") {
@@ -41,7 +42,7 @@ export default function App() {
     
     }
     
-    return (
+        return ( 
             <main className="principal">
                 <div className="divPesquisa">
                     <input className="pesquisa" type="search" placeholder="Digite o nome da planta" onKeyUp={(e) => salvaResultado(e.target.value)} />
@@ -50,4 +51,6 @@ export default function App() {
                 <BlocoPlantas Lista={lista} ApagaPlanta={apagaItens} ></BlocoPlantas>
             </main>
     )
+
+    
 }

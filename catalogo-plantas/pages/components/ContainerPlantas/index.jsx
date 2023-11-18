@@ -1,6 +1,6 @@
 export default function ContainerPlantas(props) {
     return (
-        <div className="divPlanta" data-chave={props.chave} >
+        <section className="divPlanta" data-chave={props.chave} >
             <span className="material-icons iconeX icones " onClick={(e) => props.ApagaPlanta(e.target.parentNode)}>
                 cancel
             </span>
@@ -12,6 +12,6 @@ export default function ContainerPlantas(props) {
             <span className="material-symbols-outlined icones iconeEdit" >
                 edit
             </span>
-        </div>
+        </section>
     )
 }
