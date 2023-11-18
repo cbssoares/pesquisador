@@ -1,7 +1,7 @@
 import { useState, useEffect} from "react"
-import BlocoPlantas from "./components/Blocoplantas/index.jsx"
-import { listaDePlantas } from './api/api.js'
-import { atualizaLista } from "./api/api.js"
+import BlocoPlantas from "./Blocoplantas/index.jsx"
+import { listaDePlantas } from '../api/api.js'
+import { atualizaLista } from "../api/api.js"
 const listaP = await listaDePlantas()
 
 
