@@ -102,7 +102,7 @@ export default function App() {
                 <div className="divPesquisa">
                     <input className="pesquisa" type="search" placeholder="Digite o nome da planta" onKeyUp={(e) => salvaResultado(e.target.value)} />
                     <button className="botaoPlanta" id="botaoCadastra" onClick={() => {
-                        recebeInformacao("","","","","","", "cadastra")
+                        recebeInformacao("","","","","","", "cadastra", "")
                         abreFormulario("cadastra")
                        
                         }}>Cadastrar um novo item</button>
