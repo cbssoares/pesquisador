@@ -36,11 +36,20 @@ export default async function handler(
   
   // Rest of the API logic
 if (req.method === "GET") {
-  res.status(200).json(plantas)
+  const lista = await fetch("https://getpantry.cloud/apiv1/pantry/872e29e3-2574-4be6-9b55-d262402179f6/basket/plantas", { method: "GET" })
+    const listaAdaptada = await lista.json()
+    var listaDados = await listaAdaptada.plantas
+    res.status(200).json(listaDados)
 } else if(req.method === "PUT"){
+
+    fetch("https://getpantry.cloud/apiv1/pantry/872e29e3-2574-4be6-9b55-d262402179f6/basket/plantas", {
+        method: "POST",
+        headers: {
+            'Content-Type': 'application/json'
+        }, body: JSON.stringify({ plantas: req.body })
+    })
+}
    const listaNova = req.body
    plantas.plantas = listaNova
    res.status(201).json(plantas)
-}
-
 }
