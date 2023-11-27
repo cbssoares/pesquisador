@@ -1,6 +1,5 @@
 import type { NextApiRequest, NextApiResponse } from 'next'
 import Cors from 'cors'
-import {plantas} from '../api/data/plantas.js'
 
 // Initializing the cors middleware
 // You can read more about the available options here: https://github.com/expressjs/cors#configuration-options
@@ -50,6 +49,6 @@ if (req.method === "GET") {
     })
 }
    const listaNova = req.body
-   plantas.plantas = listaNova
-   res.status(201).json(plantas)
+   
+   res.status(201).json(listaNova)
 }
