@@ -7,7 +7,7 @@ export default function Formulario(props) {
         <form id="formEditaBloco" onSubmit={(form) => {
             form.preventDefault()
             if (props.func === "edita") {
-                const list = props.Lista 
+                const list = props.Listap 
                 console.log(list)
                 list[props.info.chave].Tipo = form.target.nome.value
                 list[props.info.chave].Pote = form.target.pote.value

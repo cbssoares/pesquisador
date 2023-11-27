@@ -108,7 +108,7 @@ export default function App() {
                         }}>Cadastrar um novo item</button>
                 </div>
                 <BlocoPlantas Lista={lista} ApagaPlanta={apagaItens} abreFormulario={abreFormulario} recebeInformacao = {recebeInformacao} ></BlocoPlantas>
-                <Formulario Lista = {lista} enviaLista = {enviaLista} fechaFormulario={fechaFormulario} func = {funcao} info = {info}></Formulario>
+                <Formulario Lista = {lista}  Listap = {listaP} enviaLista = {enviaLista} fechaFormulario={fechaFormulario} func = {funcao} info = {info}></Formulario>
             </main>
     )
 
