@@ -47,8 +47,9 @@ if (req.method === "GET") {
             'Content-Type': 'application/json'
         }, body: JSON.stringify({ plantas: req.body })
     })
-}
-   const listaNova = req.body
+    const listaNova = req.body
    
-   res.status(201).json(listaNova)
+    res.status(201).json(listaNova)
+}
+  
 }
