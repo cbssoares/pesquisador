@@ -66,14 +66,14 @@ export default function App() {
     }
 
 
-    const recebeInformacao = (foto, tipo, pote, unidade, preco, chave, func) => {
+    const recebeInformacao = (foto, tipo, pote, unidade, preco, chave, func, item) => {
         const informacao = {
             foto: foto,
             tipo: tipo,
             pote: pote,
             unidade: unidade,
             preco: preco,
-            chave: chave
+            chave: item.dataset.chave
         }
         setInfo(informacao)
         abreFormulario(func,informacao)
