@@ -38,7 +38,7 @@ if (req.method === "GET") {
   const lista = await fetch("https://getpantry.cloud/apiv1/pantry/872e29e3-2574-4be6-9b55-d262402179f6/basket/plantas", { method: "GET" })
     const listaAdaptada = await lista.json()
     const listaDados = await listaAdaptada.plantas
-    res.status(200).json(await listaDados)
+    res.status(200).json(listaDados)
 } else if(req.method === "PUT"){
 
     fetch("https://getpantry.cloud/apiv1/pantry/872e29e3-2574-4be6-9b55-d262402179f6/basket/plantas", {
