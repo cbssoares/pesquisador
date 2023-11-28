@@ -10,7 +10,7 @@ export default function ContainerPlantas(props) {
             <p><strong>Unidade:</strong> {props.unidade}</p>
             <p><strong>Valor:</strong>{props.preco}</p>
             <span className="material-symbols-outlined icones iconeEdit" onClick={(e) => {
-                props.recebeInformacao(props.foto, props.tipo, props.pote, props.unidade, props.preco, props.chave, "edita", e.target.parentNode)
+                props.recebeInformacao(props.foto, props.tipo, props.pote, props.unidade, props.preco, props.chave, "edita", e.target.parentNode.dataset.chave)
             }} >
                 edit
             </span>

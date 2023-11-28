@@ -73,7 +73,7 @@ export default function App() {
             pote: pote,
             unidade: unidade,
             preco: preco,
-            chave: item.dataset.chave
+            chave: item
         }
         setInfo(informacao)
         abreFormulario(func,informacao)
