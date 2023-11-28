@@ -17,12 +17,12 @@ export default function Formulario(props) {
                 props.enviaLista(list)
                 props.fechaFormulario()
             } else {
-                let imagem = form.target.imagem.value
+            let imagem = form.target.imagem.value
             let nome = form.target.nome.value
             let pote = form.target.pote.value
             let unidade = form.target.unidade.value
             let preco = form.target.preco.value
-            const listaNova = props.Lista
+            const listaNova = props.Listap
             const novaPlanta = {
               imagem: imagem,
               Tipo: nome,
