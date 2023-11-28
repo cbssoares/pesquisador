@@ -23,6 +23,7 @@ export default function App() {
          })
          atualizaLista(listaNova)
          setlista(listaNova)
+         salvaResultado(document.querySelector(".pesquisa").value)
 
     }
     
