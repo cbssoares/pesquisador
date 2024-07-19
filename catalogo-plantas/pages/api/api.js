@@ -1,7 +1,7 @@
 const listaDePlantas = (async () => {
-    const lista = await fetch("https://getpantry.cloud/apiv1/pantry/ddc41205-af29-4dbf-ada1-f7acca55d4d8/basket/plantas", { method: "GET"})
+    const lista = await fetch("https://pesquisador-seven.vercel.app/api/tempo", { method: "GET"})
     const listaAdaptada = await lista.json()
-    var listaDados =  await listaAdaptada.plantas
+    var listaDados =  await listaAdaptada
     console.log(await listaDados)
 
     return listaDados
