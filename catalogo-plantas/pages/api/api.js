@@ -8,7 +8,7 @@ const listaDePlantas = (async () => {
 })
 
 const atualizaLista = (listaAtualizada) => {
-    fetch("", {
+    fetch("https://pesquisador-seven.vercel.app/api/tempo", {
         method: "PUT",
         headers: {
             'Content-Type': 'application/json',
