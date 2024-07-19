@@ -32,9 +32,10 @@ export default function App() {
     }
     
     const apagaItens = (bloco) => {
+        console.log(bloco)
         if (window.confirm("Tem certeza que quer apagar este item ?")) {
-            console.log(bloco)
             const item = bloco.dataset.chave 
+            console.log(item)
             listaP.splice(item, 1)
             console.log(listaP)
             enviaLista(listaP)
@@ -71,7 +72,7 @@ export default function App() {
     }
 
 
-    const recebeInformacao = (foto, tipo, pote, unidade, preco, chave, func, item) => {
+    const recebeInformacao = (foto, tipo, pote, unidade, preco, chave, func) => {
         const informacao = {
             foto: foto,
             tipo: tipo,

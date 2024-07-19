@@ -5,9 +5,9 @@ export default function ContainerPlantas(props) {
                 const icones = e.target
                 icones.classList.toggle('ativo')
                 console.log(icones)
-            }}>
+            }} data-chave={props.chave}>
                 settings
-                <span className="material-icons iconeX icones " onClick={(e) => props.ApagaPlanta(e.target.parentNode)}>
+                <span className="material-icons iconeX icones " onClick={(e) => props.ApagaPlanta(e.target.parentNode)} >
                     cancel
                 </span>
                 <span className="material-symbols-outlined icones iconeEdit" onClick={(e) => {

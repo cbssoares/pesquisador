@@ -54,6 +54,7 @@ export default function Formulario(props) {
                     <label htmlFor="formEditaUnidade"><strong>Unidade</strong></label>
                     <label htmlFor="formEditaPreco"><strong>Preço</strong></label>
                     <label htmlFor="formEditaImage"><strong>Imagem</strong></label>
+                    <label htmlFor="formFoto">Foto</label>
                 </p>
                 <p className="pInput">
                     <input type="text" name="nome" id="formEditaNome" required/>
