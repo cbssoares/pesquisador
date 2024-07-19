@@ -8,7 +8,7 @@ export default function Formulario(props) {
             form.preventDefault()
             if (props.func === "edita") {
                 const list = props.Listap 
-                console.log(list)
+                console.log(list[props.info.chave])
                 list[props.info.chave].Tipo = form.target.nome.value
                 list[props.info.chave].Pote = form.target.pote.value
                 list[props.info.chave].Unidade = form.target.unidade.value

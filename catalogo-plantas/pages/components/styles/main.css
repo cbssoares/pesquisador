@@ -54,9 +54,9 @@
 /* Div onde ficam os cards de plantas */
 #bloco-plantas{
     margin: 0px auto;
+    padding-top: 10px;
     height: 100vh;
     width: 100%;
-    background-color: blue;
     display: flex;
     flex-flow: row wrap;
     overflow: scroll;
@@ -64,11 +64,12 @@
     background: url(https://i.pinimg.com/originals/4a/e6/27/4ae62766ba7ceb08ea0128b0f4a4953b.png) rgb(166, 216, 166) ;
     background-size: 250px;
     gap: 1.8vw;
+    
 }
 
 /* Card de plantas */
 .divPlanta{
-    display: flex;
+    display: flex ;
     flex-flow: column;
     background-color: rgb(221, 221, 221);
     border-radius: 10px;
@@ -76,31 +77,27 @@
     justify-content: top;
     align-items: center;
     width: 200px;
-    height: fit-content;
-    gap: 13px;
+    max-height: 375px;
+    gap: 10px;
     font-size: 1rem;
-    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363)
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.363);
+    padding-bottom: 10px;
+    position: relative;
 }
 
-.div-icons{
-    align-self: flex-end;
-    display: flex;
-    flex-flow: column-reverse;
-    margin-bottom: -35px;
-    gap: 4px;
-}
+
 
 .icones{
-    font-size: 1.3rem;
+    font-size: 1.3rem !important;
     outline: black;
     text-decoration: dashed black 50px;
     text-shadow: 2px 2px 3px rgba(0, 0, 0, 0.116);
     cursor: pointer;
     position: relative;
-    display: inline;
+    display: none;
     color: rgb(52, 52, 184);
     align-self: flex-end ;
-    margin-right: 5px;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.705);
 }
 
 .icones:hover {
@@ -108,10 +105,41 @@
     text-shadow: 4px 4px 3px rgba(0, 0, 0, 0.116);
 }
 
+.iconeOption{
+    display: flex !important;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    position: absolute;
+    align-self: flex-end;
+    font-size:  1.3rem !important;
+    color: rgb(92, 197, 92) ;
+    outline: rgba(0, 0, 0, 0.288) solid 2px;
+    text-shadow: 5px 5px 3px rgba(0, 0, 0, 0.705);
+    cursor: pointer;
+    background-color: rgba(0, 0, 0, 0.349);
+    border-radius: 20px;
+    padding: 2px;
+    top: 5%;
+    margin-right: 5px;
+}
+
+.iconeOption:hover{
+    color: rgb(45, 226, 45);
+}
+
+.iconeOption .icones{
+    display: none;
+}
+
+.ativo .icones{
+    display: inline-block !important;
+
+}
+
 .iconeX{
     color: rgb(199, 45, 45);
-    display: inline;
-    margin-bottom: -40px;
+    
 }
 
 .iconeX:hover{

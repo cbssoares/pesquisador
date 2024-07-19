@@ -78,7 +78,7 @@ export default function App() {
             pote: pote,
             unidade: unidade,
             preco: preco,
-            chave: item
+            chave: chave
         }
         setInfo(informacao)
         abreFormulario(func,informacao)
